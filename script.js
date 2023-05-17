@@ -185,67 +185,47 @@ function debug(...args) {
 /** @type {Memory} */
 const defaultMemory = {
   conteudos: {
-    '3bim': [
-      'Arte na segunda metade do século XX : Expressionismo abstrato.',
-      'Arte na segunda metade do século XX : Neodadaísmo,Hiper-realismo,Pop Art.',
-      'Atividades sobre a Arte na segunda metade do século XX.',
-      'Atividades sobre a Arte na segunda metade do século XX.',
-      'Arte na contemporaneidade : Assemblage, Junk Art, Land Art, Happenig e Performance.',
-      'Arte na contemporaneidade : Arte interativa, Neoexpressionismo, Grafite e Arte urbana.',
-      'Atividades sobre a Arte na contemporaneidade.',
-      'Atividades sobre a Arte na contemporaneidade.',
-      'Atividades de revisão sobre Arte na segunda metade do século XX.',
-      'Atividades de revisão sobre Arte na segunda metade do século XX.',
-    ],
-    '4bim': [
-      'Arte conceitual : arte povera , arte feminina.Rock dos anos 1980 , o conceitual no teatro e na dança.Rock dos anos 1980 , o conceitual no teatro e na dança.',
-      'Atividades sobre a arte conceitual.',
-      'Arte e tecnologia : transformações culturais – as influências da tecnologia na arte.',
-      'Arte e tecnologia : videoarte , tecnologia nas artes cênicas e na música , a fotografia como expressão artística.',
-      'Atividades sobre arte e tecnologia.',
-      'Arte e cultura popular no Brasil : Literatura de cordel , o teatro de mamulengos , danças populares , festas tradicionais da cultura brasileira.',
-      'Atividades sobre arte e cultura popular.',
-      'Arte e tradição : influências culturais na América Latina – a influência na música , a influência na dança e nas artes visuais.',
-      'Atividades sobre Arte e tradição : influências culturais na América Latina .',
+    '1bim': [
+      'Apresentação perante os estudantes da ementa de 2023. introdução à morfologia - as dez classes de palavras.',
+      'Estudo do substantivo - classificação e formação.',
+      'Flexão de gênero do substantivo.',
+      'Atividades sobre formação e classificação do substantivo.',
+      'Introdução ao texto dissertativo-argumentativo.',
+      'Competências da matriz de correção das redações do Enem.',
+      'Flexão de número do substantivo.',
+      'Atividades sobre gênero e número dos substantivos.',
+      'Atividades sobre gênero e número dos substantivos.',
+      'Romantismo - contexto histórico.',
+      'Romantismo - características.',
+      'Romantismo - características.',
+      'Flexão de grau dos substantivos,',
+      'Produção de texto dissertativo-argumentativo.',
+      'Produção de texto dissertativo-argumentativo.',
+      'Romantismo no Brasil - as gerações românticas : estudo da primeira geração.',
+      'As gerações românticas : estudo da segunda e terceira gerações.',
+      'As gerações românticas : estudo da segunda e terceira gerações.',
+      'Estudo do adjetivo - classificação e flexão de gênero e número.',
+      'Estudo do grau do adjetivo - exercícios.',
+      'Estudo do grau do adjetivo - exercícios.',
+      'A prosa romântica no Brasil - os tipos de romances.',
+      'Os romances de José de Alencar.',
+      'Estudo do numeral.',
+      'Atividades sobre numeral e adjetivo.',
+      'Estudo do artigo.',
+      'Estudo do artigo.',
+      'Atividades de revisão sobre substantivo,adjetivo,artigo e numeral.',
+      'Atividades de revisão sobre Romantismo.',
+      'Atividades de revisão sobre Romantismo.',
     ],
   },
-  //links
   turmas: {
-    '3bim': [
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90562&d=8&e=3', //REGULAR - 3EM - M - 3
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90564&d=8&e=3', //REGULAR - 3EM - M - 4
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90565&d=8&e=3', //REGULAR - 3EM - M - 5
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90566&d=8&e=3', //REGULAR - 3EM - M - 6
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90567&d=8&e=3', //REGULAR - 3EM - T - 7
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90568&d=8&e=3', //REGULAR - 3EM - T - 8
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90569&d=8&e=3', //REGULAR - 3EM - T - 9
-      // // 'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90570&d=8&e=3', // //REGULAR - 3EM - T - 10
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90573&d=8&e=3', //REGULAR - 3EM - N - 13
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90574&d=8&e=3', //REGULAR - 3EM - N - 14
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90577&d=8&e=3', //REGULAR - 3EM - N - 15
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90579&d=8&e=3', //REGULAR - 3EM - N - 16
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90580&d=8&e=3', //REGULAR - 3EM - N - 17
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90581&d=8&e=3', //REGULAR - 3EM - N - 18
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90582&d=8&e=3', //REGULAR - 3EM - N - 19
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90583&d=8&e=3', //REGULAR - 3EM - N - 20
-    ],
-    '4bim': [
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90562&d=8&e=4', //REGULAR - 3EM - M - 3
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90564&d=8&e=4', //REGULAR - 3EM - M - 4
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90565&d=8&e=4', //REGULAR - 3EM - M - 5
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90566&d=8&e=4', //REGULAR - 3EM - M - 6
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90567&d=8&e=4', //REGULAR - 3EM - T - 7
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90568&d=8&e=4', //REGULAR - 3EM - T - 8
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90569&d=8&e=4', //REGULAR - 3EM - T - 9
-      // // 'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90570&d=8&e=4', // //REGULAR - 3EM - T - 10
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90573&d=8&e=4', //REGULAR - 3EM - N - 13
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90574&d=8&e=4', //REGULAR - 3EM - N - 14
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90577&d=8&e=4', //REGULAR - 3EM - N - 15
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90579&d=8&e=4', //REGULAR - 3EM - N - 16
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90580&d=8&e=4', //REGULAR - 3EM - N - 17
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90581&d=8&e=4', //REGULAR - 3EM - N - 18
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90582&d=8&e=4', //REGULAR - 3EM - N - 19
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=90583&d=8&e=4', //REGULAR - 3EM - N - 20
+    '1bim': [
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
     ],
   },
 };

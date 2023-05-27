@@ -186,46 +186,35 @@ function debug(...args) {
 const defaultMemory = {
   conteudos: {
     '1bim': [
-      'Apresentação perante os estudantes da ementa de 2023. introdução à morfologia - as dez classes de palavras.',
-      'Estudo do substantivo - classificação e formação.',
-      'Flexão de gênero do substantivo.',
-      'Atividades sobre formação e classificação do substantivo.',
-      'Introdução ao texto dissertativo-argumentativo.',
-      'Competências da matriz de correção das redações do Enem.',
-      'Flexão de número do substantivo.',
-      'Atividades sobre gênero e número dos substantivos.',
-      'Atividades sobre gênero e número dos substantivos.',
-      'Romantismo - contexto histórico.',
-      'Romantismo - características.',
-      'Romantismo - características.',
-      'Flexão de grau dos substantivos,',
-      'Produção de texto dissertativo-argumentativo.',
-      'Produção de texto dissertativo-argumentativo.',
-      'Romantismo no Brasil - as gerações românticas : estudo da primeira geração.',
-      'As gerações românticas : estudo da segunda e terceira gerações.',
-      'As gerações românticas : estudo da segunda e terceira gerações.',
-      'Estudo do adjetivo - classificação e flexão de gênero e número.',
-      'Estudo do grau do adjetivo - exercícios.',
-      'Estudo do grau do adjetivo - exercícios.',
-      'A prosa romântica no Brasil - os tipos de romances.',
-      'Os romances de José de Alencar.',
-      'Estudo do numeral.',
-      'Atividades sobre numeral e adjetivo.',
-      'Estudo do artigo.',
-      'Estudo do artigo.',
-      'Atividades de revisão sobre substantivo,adjetivo,artigo e numeral.',
-      'Atividades de revisão sobre Romantismo.',
-      'Atividades de revisão sobre Romantismo.',
+      'O surgimento da arte',
+      'Arte oriental e ocidental.',
+      'Atividades sobre o surgimento da arte e arte oriental e medieval.',
+      'Atividades sobre o surgimento da arte e arte oriental e medieval.',
+      'Arte medieval .',
+      'Arte renascentista .',
+      'Revendo a arte do antigo Egito .',
+      'Arte , realidade e expressões inovadoras.',
+      'Arte , realidade e expressões inovadoras.',
+      'Verificação de aprendizagem sobre arte medieval e renascentista e expressões inovadoras.',
     ],
   },
   turmas: {
     '1bim': [
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=1', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=1', // REGULAR - 3EM - M - 3
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=1', // REGULAR - 3EM - M - 4
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=1', // REGULAR - 3EM - M - 5
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101839&d=8&e=1', // REGULAR - 3EM - M - 6
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101840&d=8&e=1', // REGULAR - 3EM - M - 7
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101841&d=8&e=1', // REGULAR - 3EM - M - 8
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101842&d=8&e=1', // REGULAR - 3EM - M - 9
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101846&d=8&e=1', // REGULAR - 3EM - M - 13
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101847&d=8&e=1', // REGULAR - 3EM - M - 14
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101848&d=8&e=1', // REGULAR - 3EM - M - 15
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101849&d=8&e=1', // REGULAR - 3EM - M - 16
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101850&d=8&e=1', // REGULAR - 3EM - M - 17
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101851&d=8&e=1', // REGULAR - 3EM - M - 18
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=1', // REGULAR - 3EM - M - 19
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=1', // REGULAR - 3EM - M - 20
     ],
   },
 };

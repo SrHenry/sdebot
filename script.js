@@ -185,36 +185,76 @@ function debug(...args) {
 /** @type {Memory} */
 const defaultMemory = {
   conteudos: {
-    '1bim': [
-      'O surgimento da arte',
-      'Arte oriental e ocidental.',
-      'Atividades sobre o surgimento da arte e arte oriental e medieval.',
-      'Atividades sobre o surgimento da arte e arte oriental e medieval.',
-      'Arte medieval .',
-      'Arte renascentista .',
-      'Revendo a arte do antigo Egito .',
-      'Arte , realidade e expressões inovadoras.',
-      'Arte , realidade e expressões inovadoras.',
-      'Verificação de aprendizagem sobre arte medieval e renascentista e expressões inovadoras.',
+    '2º Ano - 2º Bimestre': [
+      'Concordância verbal com o sujeito simples.',
+      'Concordância verbal com o sujeito simples.',
+      'Concordância verbal - os pronomes relativos "quem" e "cujo" .',
+      'Concordância verbal - os pronomes relativos "quem" e "cujo" .',
+      'Atividades sobre concordância verbal .',
+      'Realismo - Naturalismo : introdução.',
+      'Realismo - Naturalismo : contexto histórico .',
+      'Produzindo uma introdução argumentativa .',
+      'Produzindo uma introdução argumentativa .',
+      'Análise de fragmento do livro O cortiço .',
+      'Características do Realismo - Naturalismo .',
+      'Características do Realismo - Naturalismo .',
+      'Estudo do verbo : vozes verbais.',
+      'Estudo do verbo : vozes verbais.',
+      'Atividades sobre vozes verbais .',
+      'Produzindo introdução do texto argumentativo .',
+      'Produzindo introdução do texto argumentativo .',
+      'Modos verbais .',
+      'As fases do romancista Machado de Assis no Realismo.',
+      'As fases do romancista Machado de Assis no Realismo.',
+      'Atividades sobre modos e vozes verbais .',
+      'Atividades de fixação sobre Realismo - Naturalismo .',
+      'Atividades de fixação sobre Realismo - Naturalismo .',
+      'Análise de fragmento do livro Memórias póstumas de Braz Cubas .',
+      'Revisão sobre modos e vozes verbais.',
+      'Revisão sobre modos e vozes verbais.',
+      'Análise de fragmento da obra O Ateneu de Raul Pompeia.',
+      'Produção de texto .',
+      'Produção de texto .',
+    ],
+    '3º Ano - 2º Bimestre': [
+      'Novos conceitos de expressão artística.',
+      'Neoimpressionismo,Fauvismo,Art nouveau,, Art Déco.',
+      'Atividades sobre Neoimpressionismo,Fauvismo,Art nouveau,, Art Déco.',
+      'Principais conceitos de arte de vanguarda.',
+      'Principais conceitos de arte de vanguarda.',
+      'Atividades sobre a arte de vanguarda.',
+      'Arte e revolução : quebra de paradigmas.',
+      'Arte e revolução : quebra de paradigmas : Dadaísmo,Surrealismo.',
+      'Atividades sobre Dadaísmo e Surrealismo.',
+      'Revisão sobre novos conceitos de expressão artística e a quebra de paradigmas na Arte.',
     ],
   },
   turmas: {
-    '1bim': [
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=1', // REGULAR - 3EM - M - 3
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=1', // REGULAR - 3EM - M - 4
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=1', // REGULAR - 3EM - M - 5
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101839&d=8&e=1', // REGULAR - 3EM - M - 6
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101840&d=8&e=1', // REGULAR - 3EM - M - 7
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101841&d=8&e=1', // REGULAR - 3EM - M - 8
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101842&d=8&e=1', // REGULAR - 3EM - M - 9
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101846&d=8&e=1', // REGULAR - 3EM - M - 13
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101847&d=8&e=1', // REGULAR - 3EM - M - 14
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101848&d=8&e=1', // REGULAR - 3EM - M - 15
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101849&d=8&e=1', // REGULAR - 3EM - M - 16
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101850&d=8&e=1', // REGULAR - 3EM - M - 17
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101851&d=8&e=1', // REGULAR - 3EM - M - 18
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=1', // REGULAR - 3EM - M - 19
-      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=1', // REGULAR - 3EM - M - 20
+    '2º Ano - 2º Bimestre': [
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101814&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 4
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=2', //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
+    ],
+    '3º Ano - 2º Bimestre': [
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=2', // REGULAR - 3EM - M - 3
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=2', // REGULAR - 3EM - M - 4
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=2', // REGULAR - 3EM - M - 5
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101839&d=8&e=2', // REGULAR - 3EM - M - 6
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101840&d=8&e=2', // REGULAR - 3EM - M - 7
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101841&d=8&e=2', // REGULAR - 3EM - M - 8
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101842&d=8&e=2', // REGULAR - 3EM - M - 9
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101846&d=8&e=2', // REGULAR - 3EM - M - 13
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101847&d=8&e=2', // REGULAR - 3EM - M - 14
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101848&d=8&e=2', // REGULAR - 3EM - M - 15
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101849&d=8&e=2', // REGULAR - 3EM - M - 16
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101850&d=8&e=2', // REGULAR - 3EM - M - 17
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101851&d=8&e=2', // REGULAR - 3EM - M - 18
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=2', // REGULAR - 3EM - M - 19
+      'https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=2', // REGULAR - 3EM - M - 20
     ],
   },
 };

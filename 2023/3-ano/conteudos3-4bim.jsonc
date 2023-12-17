@@ -1,0 +1,62 @@
+{
+    "conteudos": {
+        "3bim": [
+            "A arte povera.",
+            "Atividades sobre a arte povera.",
+            "A arte feminina .",
+            "Rock nos anos 1980.",
+            "O conceitual no teatro e na dança.",
+            "Atividades sobre arte conceitual.",
+            "Arte e tecnologia - Transformações culturais: as influências da tecnologia na arte.",
+            "Vídeoarte, tecnologias nas artes cênicas e na música ,a fotografia como expressão artística.",
+            "Atividades sobre arte conceitual e arte e tecnologia ."
+        ],
+        "4bim": [
+            "Arte e cultura popular no Brasil : literatura de cordel.",
+            "Arte e cultura popular no Brasil : o teatro de mamulengos .",
+            "Arte e cultura popular no Brasil : danças populares .",
+            "Arte e cultura popular no Brasil : festas tradicionais da cultura brasileira.",
+            "Arte e cultura popular no Brasil - atividades de fixação .",
+            "Arte e cultura popular no Brasil - atividades de fixação .",
+            "Arte e tradição : influências culturais na América Latina.",
+            "Arte e tradição : as culturas indígena,europeia e africana e suas influências nas artes latino-americanas.",
+            "Arte e tradição : a influência na música,na dança e nas artes visuais.",
+            "Atividades sobre arte e tradição na América Latina."
+        ]
+    },
+    "turmas": {
+        "3bim": [
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=3", // REGULAR - 3EM - M - 3
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=3", // REGULAR - 3EM - M - 4
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=3", // REGULAR - 3EM - M - 5
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101839&d=8&e=3", // REGULAR - 3EM - M - 6
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101840&d=8&e=3", // REGULAR - 3EM - M - 7
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101841&d=8&e=3", // REGULAR - 3EM - M - 8
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101842&d=8&e=3", // REGULAR - 3EM - M - 9
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101846&d=8&e=3", // REGULAR - 3EM - M - 13
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101847&d=8&e=3", // REGULAR - 3EM - M - 14
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101848&d=8&e=3", // REGULAR - 3EM - M - 15
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101849&d=8&e=3", // REGULAR - 3EM - M - 16
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101850&d=8&e=3", // REGULAR - 3EM - M - 17
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101851&d=8&e=3", // REGULAR - 3EM - M - 18
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=3", // REGULAR - 3EM - M - 19
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=3" // REGULAR - 3EM - M - 20
+        ],
+        "4bim": [
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=4", // REGULAR - 3EM - M - 4
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=4", // REGULAR - 3EM - M - 5
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101839&d=8&e=4", // REGULAR - 3EM - M - 6
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101840&d=8&e=4", // REGULAR - 3EM - M - 7
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101841&d=8&e=4", // REGULAR - 3EM - M - 8
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101842&d=8&e=4", // REGULAR - 3EM - M - 9
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101846&d=8&e=4", // REGULAR - 3EM - M - 13
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101847&d=8&e=4", // REGULAR - 3EM - M - 14
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101848&d=8&e=4", // REGULAR - 3EM - M - 15
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101849&d=8&e=4", // REGULAR - 3EM - M - 16
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101850&d=8&e=4", // REGULAR - 3EM - M - 17
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101851&d=8&e=4", // REGULAR - 3EM - M - 18
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=4", // REGULAR - 3EM - M - 19
+            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=4" // REGULAR - 3EM - M - 20
+        ]
+    }
+}

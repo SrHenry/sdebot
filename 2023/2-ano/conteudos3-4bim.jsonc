@@ -1,68 +1,5 @@
 {
   "conteudos": {
-    "1bim": [
-      "Apresentação perante os estudantes da ementa de 2023. introdução à morfologia - as dez classes de palavras.",
-      "Estudo do substantivo - classificação e formação.",
-      "Flexão de gênero do substantivo.",
-      "Atividades sobre formação e classificação do substantivo.",
-      "Introdução ao texto dissertativo-argumentativo.",
-      "Competências da matriz de correção das redações do Enem.",
-      "Flexão de número do substantivo.",
-      "Atividades sobre gênero e número dos substantivos.",
-      "Atividades sobre gênero e número dos substantivos.",
-      "Romantismo - contexto histórico.",
-      "Romantismo - características.",
-      "Romantismo - características.",
-      "Flexão de grau dos substantivos,",
-      "Produção de texto dissertativo-argumentativo.",
-      "Produção de texto dissertativo-argumentativo.",
-      "Romantismo no Brasil - as gerações românticas : estudo da primeira geração.",
-      "As gerações românticas : estudo da segunda e terceira gerações.",
-      "As gerações românticas : estudo da segunda e terceira gerações.",
-      "Estudo do adjetivo - classificação e flexão de gênero e número.",
-      "Estudo do grau do adjetivo - exercícios.",
-      "Estudo do grau do adjetivo - exercícios.",
-      "A prosa romântica no Brasil - os tipos de romances.",
-      "Os romances de José de Alencar.",
-      "Estudo do numeral.",
-      "Atividades sobre numeral e adjetivo.",
-      "Estudo do artigo.",
-      "Estudo do artigo.",
-      "Atividades de revisão sobre substantivo,adjetivo,artigo e numeral.",
-      "Atividades de revisão sobre Romantismo.",
-      "Atividades de revisão sobre Romantismo."
-    ],
-    "2bim": [
-      "Concordância verbal com o sujeito simples.",
-      "Concordância verbal com o sujeito simples.",
-      "Concordância verbal - os pronomes relativos \"quem\" e \"cujo\" .",
-      "Concordância verbal - os pronomes relativos \"quem\" e \"cujo\" .",
-      "Atividades sobre concordância verbal .",
-      "Realismo - Naturalismo : introdução.",
-      "Realismo - Naturalismo : contexto histórico .",
-      "Produzindo uma introdução argumentativa .",
-      "Produzindo uma introdução argumentativa .",
-      "Análise de fragmento do livro O cortiço .",
-      "Características do Realismo - Naturalismo .",
-      "Características do Realismo - Naturalismo .",
-      "Estudo do verbo : vozes verbais.",
-      "Estudo do verbo : vozes verbais.",
-      "Atividades sobre vozes verbais .",
-      "Produzindo introdução do texto argumentativo .",
-      "Produzindo introdução do texto argumentativo .",
-      "Modos verbais .",
-      "As fases do romancista Machado de Assis no Realismo.",
-      "As fases do romancista Machado de Assis no Realismo.",
-      "Atividades sobre modos e vozes verbais .",
-      "Atividades de fixação sobre Realismo - Naturalismo .",
-      "Atividades de fixação sobre Realismo - Naturalismo .",
-      "Análise de fragmento do livro Memórias póstumas de Braz Cubas .",
-      "Revisão sobre modos e vozes verbais.",
-      "Revisão sobre modos e vozes verbais.",
-      "Análise de fragmento da obra O Ateneu de Raul Pompeia.",
-      "Produção de texto .",
-      "Produção de texto ."
-    ],
     "3bim": [
       "Parnasianismo - contexto histórico.",
       "Parnasianismo - contexto histórico.",
@@ -131,23 +68,6 @@
     ]
   },
   "turmas": {
-    "1bim": [
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=1" //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
-    ],
-    "2bim": [
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=2", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=2", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=2", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101814&d=5&e=2", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 4
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=2", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=2", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
-      "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=2" //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
-    ],
     "3bim": [
       "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=3", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
       "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=3", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3

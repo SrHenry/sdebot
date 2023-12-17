@@ -168,17 +168,23 @@ async function prepareAllContents(conteudos, root = document) {
     .querySelectorAll('html > body > .container tbody > tr')
     .entries() ?? []) {
     const a = tr.querySelector('td > a');
-    const _data = tr.querySelectorAll('td')[1];
 
-    if (!a || !_data) throw new Error('_data is null|undefined');
+    if (a === null && tr.querySelectorAll('td > div > a').length === 2) {
+      // Already insert, skip row
+      continue;
+    }
+
+    const _date = tr.querySelectorAll('td')[1];
+
+    if (!a || !_date) throw new Error('_data is null|undefined');
 
     const url = a.href;
-    const data = _data.innerText.replace(
+    const date = _date.innerText.replace(
       /^(\d{2})\/(\d{2})\/(\d{4})$/,
       '$3-$2-$1',
     );
 
-    const context = await prepareContent(url, data, conteudos[i]);
+    const context = await prepareContent(url, date, conteudos[i]);
     allContents.push(context);
   }
 

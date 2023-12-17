@@ -533,7 +533,11 @@ class Consumer {
  * @param {Memory} memory
  */
 //eslint-disable-next-line no-unused-vars
-async function runWithQueue(memory = defaultMemory) {
+async function runWithQueue(
+  memory = defaultMemory,
+  rateLimit = RATE_LIMIT,
+  concurrency = CONCURRENCY,
+) {
   debug('[runWithQueue::Function] >> Starting...');
 
   /** @type {Response[][]} */
@@ -549,7 +553,7 @@ async function runWithQueue(memory = defaultMemory) {
       urls,
     });
 
-    const turmas = await fetchTurmasWithRateLimit(urls, RATE_LIMIT);
+    const turmas = await fetchTurmasWithRateLimit(urls, rateLimit);
     const preparedContents = await Promise.all(
       turmas.map(turma => prepareAllContents(conteudos, turma)),
     );
@@ -559,7 +563,7 @@ async function runWithQueue(memory = defaultMemory) {
     });
 
     const queue = new Queue(preparedContents.flat());
-    const responses = await Consumer.execute(queue, CONCURRENCY);
+    const responses = await Consumer.execute(queue, concurrency);
 
     debug(`[runWithQueue::Function] >> [bim::string::for (${bim})]`, {
       responses,

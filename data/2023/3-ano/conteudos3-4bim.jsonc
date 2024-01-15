@@ -1,6 +1,6 @@
 {
     "conteudos": {
-        "3bim": [
+        "3º Ano - 3º Bimestre": [
             "A arte povera.",
             "Atividades sobre a arte povera.",
             "A arte feminina .",
@@ -11,7 +11,7 @@
             "Vídeoarte, tecnologias nas artes cênicas e na música ,a fotografia como expressão artística.",
             "Atividades sobre arte conceitual e arte e tecnologia ."
         ],
-        "4bim": [
+        "3º Ano - 4º Bimestre": [
             "Arte e cultura popular no Brasil : literatura de cordel.",
             "Arte e cultura popular no Brasil : o teatro de mamulengos .",
             "Arte e cultura popular no Brasil : danças populares .",
@@ -25,7 +25,7 @@
         ]
     },
     "turmas": {
-        "3bim": [
+        "3º Ano - 3º Bimestre": [
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=3", // REGULAR - 3EM - M - 3
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=3", // REGULAR - 3EM - M - 4
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=3", // REGULAR - 3EM - M - 5
@@ -42,7 +42,7 @@
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=3", // REGULAR - 3EM - M - 19
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=3" // REGULAR - 3EM - M - 20
         ],
-        "4bim": [
+        "3º Ano - 4º Bimestre": [
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=4", // REGULAR - 3EM - M - 4
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=4", // REGULAR - 3EM - M - 5
             "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101839&d=8&e=4", // REGULAR - 3EM - M - 6

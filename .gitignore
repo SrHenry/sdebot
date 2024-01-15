@@ -1,0 +1,9 @@
+.vscode
+.history
+node_modules
+dist
+.env
+**/*.draft.*
+**/*.draft
+yarn-error.log
+coverage

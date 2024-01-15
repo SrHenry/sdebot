@@ -1,6 +1,6 @@
 {
     "conteudos": {
-        "1bim": [
+        "3º Ano - 1º Bimestre": [
             "O surgimento da arte",
             "Arte oriental e ocidental.",
             "Atividades sobre o surgimento da arte e arte oriental e medieval.",
@@ -12,7 +12,7 @@
             "Arte , realidade e expressões inovadoras.",
             "Verificação de aprendizagem sobre arte medieval e renascentista e expressões inovadoras."
         ],
-        "2bim": [
+        "3º Ano - 2º Bimestre": [
             "Novos conceitos de expressão artística.",
             "Neoimpressionismo,Fauvismo,Art nouveau,, Art Déco.",
             "Atividades sobre Neoimpressionismo,Fauvismo,Art nouveau,, Art Déco.",
@@ -26,7 +26,7 @@
         ]
     },
     "turmas": {
-        "1bim": [
+        "3º Ano - 1º Bimestre": [
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=1", // REGULAR - 3EM - M - 3
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=1", // REGULAR - 3EM - M - 4
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=1", // REGULAR - 3EM - M - 5
@@ -43,7 +43,7 @@
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101852&d=8&e=1", // REGULAR - 3EM - M - 19
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101853&d=8&e=1" // REGULAR - 3EM - M - 20
         ],
-        "2bim": [
+        "3º Ano - 2º Bimestre": [
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101836&d=8&e=2", // REGULAR - 3EM - M - 3
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101837&d=8&e=2", // REGULAR - 3EM - M - 4
             "https://diario.seduc.ro.gov.br/professor/frequencia_busca.php?t=101838&d=8&e=2", // REGULAR - 3EM - M - 5

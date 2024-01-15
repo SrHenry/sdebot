@@ -1,88 +1,52 @@
+[old_diario_href]: https://diario.seduc.ro.gov.br
 [diario_href]: https://rubi.seduc.ro.gov.br
+[31d01c]: https://github.com/SrHenry/leovincey/tree/31d01c61f5be6ba120234bd569575cf41e171cf3
 
 # [Diário Eletrônico - SEDUC][diario_href]
 
 > ## **Avisos**
 >
+> - **`15/01/2024`:**
+> O projeto sofreu mudanças estruturais e logisticas significativas, com novas dependências. Caso deseje usar o modo standalone (sem dependências), acesse uma revisão anterior [aqui (`31d01c`)][31d01c]
+>
 > - **`16/12/2023`:**
-> O endereço do Diário Eletrônico da SEDUC mudou de [**diario**.seduc.ro.gov.br](https://diario.seduc.ro.gov.br) para [**rubi**.seduc.ro.gov.br](https://rubi.seduc.ro.gov.br) devido à instabilidades.
+> O endereço do Diário Eletrônico da SEDUC mudou de [**diario**.seduc.ro.gov.br][old_diario_href] para [**rubi**.seduc.ro.gov.br][diario_href] devido à instabilidades.
 >
 
 ## Instruções
 
-1. Codificar na memória do script as informações necessárias (conteúdos e turmas)
+1. Inicialize o projeto, caso seja a primeira vez o utilizando. Para inicializar o projeto, basta usar o comando:
 
-   Modelo de exemplo:
-
-    ```json
-        {
-          "conteudos": {
-            "1bim": [
-              "Apresentação perante os estudantes da ementa de 2023. introdução à morfologia - as dez classes de palavras.",
-              "Estudo do substantivo - classificação e formação.",
-              "Flexão de gênero do substantivo.",
-              "Atividades sobre formação e classificação do substantivo.",
-              "Introdução ao texto dissertativo-argumentativo.",
-              "Competências da matriz de correção das redações do Enem.",
-              "Flexão de número do substantivo.",
-              "Atividades sobre gênero e número dos substantivos.",
-              "Atividades sobre gênero e número dos substantivos.",
-              "Romantismo - contexto histórico.",
-              "Romantismo - características.",
-              "Romantismo - características.",
-              "Flexão de grau dos substantivos,",
-              "Produção de texto dissertativo-argumentativo.",
-              "Produção de texto dissertativo-argumentativo.",
-              "Romantismo no Brasil - as gerações românticas : estudo da primeira geração.",
-              "As gerações românticas : estudo da segunda e terceira gerações.",
-              "As gerações românticas : estudo da segunda e terceira gerações.",
-              "Estudo do adjetivo - classificação e flexão de gênero e número.",
-              "Estudo do grau do adjetivo - exercícios.",
-              "Estudo do grau do adjetivo - exercícios.",
-              "A prosa romântica no Brasil - os tipos de romances.",
-              "Os romances de José de Alencar.",
-              "Estudo do numeral.",
-              "Atividades sobre numeral e adjetivo.",
-              "Estudo do artigo.",
-              "Estudo do artigo.",
-              "Atividades de revisão sobre substantivo,adjetivo,artigo e numeral.",
-              "Atividades de revisão sobre Romantismo.",
-              "Atividades de revisão sobre Romantismo."
-            ]
-          },
-          "turmas": {
-            "1bim": [
-              "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
-              "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
-              "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
-              "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
-              "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
-              "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=1" //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
-            ]
-          }
-        }
+    ```sh
+    yarn
     ```
 
-    >> 1. Para obter os links das turmas, basta selecionar as turmas desejadas, uma por vez.
-    >> 1. Enquanto selecionada uma turma, copie o link da barra de URL do navegador.
-    >>
+2. Uma vez inicializado, o arquivo [`.env`](/.env) deve aparecer na raiz do projeto, com algumas configurações padrão. Sinta-se à vontade para ajustar de acordo com o uso.
+
+3. Crie seus arquivos de memória no formato *CommonJS*, *JSON* ou *JSONC* contendo as informações necessárias (conteúdos e turmas), como exemplificado no arquivo [`memory-example.jsonc`](/data/memory-example.jsonc).
+
+    > 1. Para obter os links das turmas, basta selecionar as turmas desejadas, uma por vez.
+    > 2. Enquanto selecionada uma turma, copie o link da barra de URL do navegador.
+    >
     > <img src="./assets/img/Captura%20de%20tela%202023-05-17%20063313.png" alt="Ilustração dos passos 1 e 2 acima"/>
 
-2. Atualizar a memória no script, copiando e colando do arquivo JSON/JSONC para o script, na variável [`defaultMemory`](/script.js?plain=1#L233)
+4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env?plain=1) os nomes dos arquivos de memória que serão utilizados.
 
-3. Copiar o script para o console do navegador, na página do [**Diário Eletrônico - SEDUC**](diario_href) (certifique-se de que está logado **ANTES** de executar estes passos, com um login fresco/recente).
+5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env?plain=1). Escolha entre os seguintes modos:
+    > - **`normal`:** Modo normal, recomendado quando o diário eletrônico estiver com alta disponibilidade ou sem limitação de consumo.
+    > - **`queued`:** Modo econômico, recomendado quando necessitar de uma versão baseada em fila e limite de consumo de API, quando o Diário Eletrônico estiver instável/lento
+    (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env?plain=1#L1))
 
-4. Executar o script no console, escrevendo a seguinte linha:
+6. Publique a automação usando o seguinte comando:
 
-    ```js
-    await run()
+    ```sh
+    yarn webpack
     ```
 
-    Ou, se necessitar de uma versão baseada em fila e limite de consumo de API, quando o Diário Eletrônico estiver instável/lento
-    (É possível configurar os intervalos e limites do algoritmo no arquivo [`./script.js`](/script.js?plain=1#L1), na sessão de constantes):
+    O script de automação deve aparecer no caminho [`dist/script.js`](/dist/script.js)
 
-    ```js
-    await runWithQueue()
-    ```
+7. Copie o script para o console do navegador, na página do [**Diário Eletrônico - SEDUC**](diario_href).
+    O script iniciará automaticamente assim que colado no console do navegador
+    (certifique-se de que está logado **ANTES** de executar estes passos, com um login fresco/recente).
 
-5. Aguardar a execução do script finalizar, onde o console emitirá a mensagem `[run::Function]: Finished!` (Ou `[runWithQueue::Function]: Finished!`)
+8. Aguardar a execução do script finalizar, onde o console emitirá a mensagem `[run::Function]: Finished!` (Ou `[runWithQueue::Function]: Finished!`)

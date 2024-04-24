@@ -21,7 +21,7 @@ export class GroupFactory {
           else result[key][groupKey] = values;
         } else {
           Object.assign(result, {
-            key: {
+            [key]: {
               [groupKey]: values,
             },
           });

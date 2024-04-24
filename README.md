@@ -1,16 +1,20 @@
-[old_diario_href]: https://diario.seduc.ro.gov.br
-[diario_href]: https://rubi.seduc.ro.gov.br
-[31d01c]: https://github.com/SrHenry/leovincey/tree/31d01c61f5be6ba120234bd569575cf41e171cf3
-
 # [Diário Eletrônico - SEDUC][diario_href]
 
+[old_diario_href_1]: https://diario.seduc.ro.gov.br
+[old_diario_href_2]: https://rubi.seduc.ro.gov.br
+[diario_href]: https://sde.seduc.ro.gov.br
+[31d01c]: https://github.com/SrHenry/leovincey/tree/31d01c61f5be6ba120234bd569575cf41e171cf3
+
 > ## **Avisos**
+>
+> - **`24/04/2024`:**
+> O endereço do Diário Eletrônico da SEDUC mudou de [**rubi**.seduc.ro.gov.br][old_diario_href_2] para [**sde**.seduc.ro.gov.br][diario_href].
 >
 > - **`15/01/2024`:**
 > O projeto sofreu mudanças estruturais e logisticas significativas, com novas dependências. Caso deseje usar o modo standalone (sem dependências), acesse uma revisão anterior [aqui (`31d01c`)][31d01c]
 >
 > - **`16/12/2023`:**
-> O endereço do Diário Eletrônico da SEDUC mudou de [**diario**.seduc.ro.gov.br][old_diario_href] para [**rubi**.seduc.ro.gov.br][diario_href] devido à instabilidades.
+> O endereço do Diário Eletrônico da SEDUC mudou de [**diario**.seduc.ro.gov.br][old_diario_href_1] para [**rubi**.seduc.ro.gov.br][diario_href] devido à instabilidades.
 >
 
 ## Instruções

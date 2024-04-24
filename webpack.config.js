@@ -48,14 +48,13 @@ const defaultMemory = memoryDataPaths
     for (const key in part) {
       if (key in memory) {
         for (const subkey in part[key]) {
-          if (subkey in memory[key]) {
-            memory[key][subkey] = {
-              ...memory[key][subkey],
-              ...part[key][subkey],
-            };
-          } else {
-            memory[key][subkey] = part[key][subkey];
-          }
+          memory[key][subkey] =
+            subkey in memory[key]
+              ? {
+                  ...memory[key][subkey],
+                  ...part[key][subkey],
+                }
+              : part[key][subkey];
         }
       } else {
         memory[key] = part[key];

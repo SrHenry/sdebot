@@ -17,6 +17,10 @@
 > O endereço do Diário Eletrônico da SEDUC mudou de [**diario**.seduc.ro.gov.br][old_diario_href_1] para [**rubi**.seduc.ro.gov.br][diario_href] devido à instabilidades.
 >
 
+## Requisitos
+
+1. `Docker` ou `Node.js` instalado.
+
 ## Instruções
 
 1. Inicialize o projeto, caso seja a primeira vez o utilizando. Para inicializar o projeto, basta usar o comando:

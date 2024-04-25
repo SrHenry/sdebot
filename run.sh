@@ -1,0 +1,1 @@
+docker run --rm --name diario-seduc-bot -v ./:/app -w /app node:21-slim $@

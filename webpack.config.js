@@ -1,13 +1,7 @@
 //webpack.config.js
 require('dotenv').config();
 
-const {
-  or,
-  string,
-  object,
-  StringRules,
-  asEnum,
-} = require('@srhenry/type-utils');
+const { string, object, StringRules, asEnum } = require('@srhenry/type-utils');
 
 /** @type {() => import('@srhenry/type-utils').TypeGuard<string>} */
 const NumberString = () => o =>
@@ -25,25 +19,36 @@ const isValidEnv = object({
 
 if (!isValidEnv(process.env)) throw new Error('Invalid environment variables');
 
-const path = require('path');
-const webpack = require('webpack');
-const fs = require('fs');
-const { parse: parseJSONC } = require('comment-json');
+const { DefinePlugin } = require('webpack');
+const { readFileSync } = require('fs');
+const { resolve: __1 } = require('path');
+const { parse: __2 } = require('comment-json');
+
+/** @param {string} path */
+const resolvePath = path => __1(__dirname, path);
+/** @param {string} file */
+const parseJSONC = file => __2(file, null, true);
+/** @param {string} path */
+const isJSONC = path => /.*\.jsonc$/.test(path);
+
+/**
+ * @param {string} path
+ * @returns {Record<string, string>}
+ */
+function handleMemData(path) {
+  if (isJSONC(path)) {
+    const file = readFileSync(path).toString();
+    return parseJSONC(file);
+  } else return require(path);
+}
 
 /** @type {string[]} */
 const memoryDataPaths = JSON.parse(process.env.MEMORY_DATA_PATHS) ?? [];
 
 /** @type {import('./src/diario-seduc/types/Memory.ts').Memory} */
 const defaultMemory = memoryDataPaths
-  .map(mempath => {
-    return /.*\.jsonc$/.test(mempath)
-      ? parseJSONC(
-          fs.readFileSync(path.resolve(__dirname, mempath)).toString(),
-          null,
-          true,
-        )
-      : require(path.resolve(__dirname, mempath));
-  })
+  .map(resolvePath)
+  .map(handleMemData)
   .reduce((memory, part) => {
     for (const key in part) {
       if (key in memory) {
@@ -63,6 +68,7 @@ const defaultMemory = memoryDataPaths
 
     return memory;
   }, {});
+
 const mode = process.env.MODE;
 
 const INTERVAL = Number(process.env.INTERVAL);
@@ -88,13 +94,13 @@ module.exports = {
     main: './src/main.ts',
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: resolvePath('./dist'),
     filename: 'script.js', // <--- Will be compiled to this single file
   },
   resolve: {
     extensions: ['.ts', '.js'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': resolvePath('src'),
     },
   },
   module: {
@@ -105,5 +111,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [new webpack.DefinePlugin({ ...MACROS })],
+  plugins: [new DefinePlugin({ ...MACROS })],
 };

@@ -7,7 +7,7 @@ export async function prepareAllContents(conteudos: string[], root = document) {
   for (const [i, tr] of root
     .querySelectorAll('html > body > .container tbody > tr')
     .entries() ?? []) {
-    const a = tr.querySelector('td > a') as HTMLAnchorElement | null;
+    const a = tr.querySelector<HTMLAnchorElement>('td > a');
 
     if (a === null && tr.querySelectorAll('td > div > a').length === 2) {
       // Already insert, skip row
@@ -16,7 +16,7 @@ export async function prepareAllContents(conteudos: string[], root = document) {
 
     const _date = tr.querySelectorAll('td')[1];
 
-    if (!a || !_date) throw new Error('_data is null|undefined');
+    if (!a || !_date) throw new Error('`a` and/or `_data` is null|undefined');
 
     const url = a.href;
     const date = _date.innerText.replace(

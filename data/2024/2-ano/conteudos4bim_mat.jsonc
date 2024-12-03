@@ -45,8 +45,7 @@
     },
     "turmas": {
         "2º Ano - Manhã - 4º Bimestre": [
-            /** Turma 2 não tem 4° bimestre */
-            // "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=120991&d=5&e=4", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 2EM - CH ESTENDIDA - M - 2
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=120991&d=5&e=4", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 2EM - CH ESTENDIDA - M - 2
             "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=120992&d=5&e=4" //ENSINO MÉDIO REGULAR CH ESTENDIDA - 2EM - CH ESTENDIDA - M - 3
         ]
     }

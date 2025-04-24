@@ -9,6 +9,17 @@
 Este projeto é uma ferramenta para automatizar e agilizar processos realizados no [**Diário Eletrônico**][diario_href] da [SEDUC/RO][seduc_contact]. O objetivo é facilitar o trabalho dos professores
 e servidores da educação, permitindo que eles se concentrem em tarefas mais importantes, enquanto a automação cuida de tarefas repetitivas.
 
+Atualmente, o projeto é capaz de realizar as seguintes tarefas:
+
+- **Publicar conteúdos**: Permite que os professores publiquem conteúdos de forma rápida e eficiente, sem precisar inserir cada conteúdo no Diário Eletrônico manualmente um por vez.
+Este modo é o modo padrão do script gerado pelo SDEBot, e ele além de publicar os conteúdos pode inserir a frequência dos alunos, mas esta funcionalidade não é suportada no momento, o que faz com que
+todos os dias lançados com conteúdo conste presença para todos os alunos de cada turma.
+O motivo de a frequência ainda não ser suportada se dá pelo fato de que este projeto foi sesenvolvido durante a Pandemia de COVID-19, onde os professores eram orientados a não lançar faltas no Diário Eletrônico.
+Caso seja necessário, o projeto pode ser adaptado para suportar a frequência dos alunos, mas isso não é uma prioridade no momento.
+
+Devido à natureza do projeto, ele pode ser utilizado para automatizar outras tarefas que não estão listadas aqui, desde que sejam compatíveis com o Diário Eletrônico.
+Caso queira sugerir novas funcionalidades ou melhorias, fique à vontade para abrir uma *issue* ou enviar um *pull request*.
+
 O projeto é desenvolvido em *TypeScript* e utiliza o framework [Node.js](https://nodejs.org/) para o desenvolvimento do código.
 Ele também utiliza o [Yarn](https://yarnpkg.com/) como gerenciador de pacotes e o [Webpack](https://webpack.js.org/) para empacotar o código.
 Para o usuário final, o projeto é disponibilizado como um script JavaScript que pode ser copiado e executado diretamente no console do navegador.

@@ -1,4 +1,4 @@
-# Contribuindo ao SEDUCBot
+# Contribuindo ao SDEBot
 
 👍🎉 Primeiramente, obrigado por reservar seu tempo para contribuir! 🎉👍
 

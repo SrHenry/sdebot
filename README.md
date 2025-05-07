@@ -148,7 +148,7 @@ Ou
     > 1. Para obter os links das turmas, basta selecionar as turmas desejadas, uma por vez.
     > 2. Enquanto selecionada uma turma, copie o link da barra de URL do navegador.
     >
-    > <img src="./assets/img/Captura%20de%20tela%202023-05-17%20063313.png" alt="Ilustração dos passos 1 e 2 acima"/>
+    > <img src="./assets/img/Captura%20de%20tela%202023-05-17.png" alt="Ilustração dos passos 1 e 2 acima"/>
 
 4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env?plain=1) os nomes dos arquivos de memória que serão utilizados.
 

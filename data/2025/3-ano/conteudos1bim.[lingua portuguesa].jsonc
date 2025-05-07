@@ -1,0 +1,40 @@
+{
+    "conteudos": {
+        "3º Ano - Língua Portuguesa - 1º Bimestre": [
+            "Tipos de linguagens - Exercícios sobre tipos de linguagens",
+            "Funções da linguagem - Exercício sobre funções da linguagem",
+            "O texto literário e suas funções.",
+            "Estrutura das palavras / Formação de palavras",
+            "Revisão sobre Romantismo : contexto histórico, características e produção literária.",
+            "Ambiguidade - Exercícios sobre Ambiguidade",
+            "Produção textual : elementos básicos na construção da introdução modelo Enem.",
+            "Produção textual : elementos básicos na construção da introdução modelo Enem.",
+            "Acentuação gráfica / Crase / Pontuação - Exercício Crase, Pontuação e Acentuação gráfica",
+            "Revisão sobre Realismo-Naturalismo : contexto histórico,características e produção literária.",
+            "Formas do discurso - Competências e habilidades - Intertextualidade",
+            "Revisão sobre Parnasianismo , Simbolismo : contexto histórico , características e produção literária.",
+            "Produzindo uma introdução modelo Enem .",
+            "Colocação pronominal - Exercício sobre colocação pronominal",
+            "Figuras de linguagem (Sonoras e palavras)",
+            "Pré-Modernismo: contexto histórico e características.",
+            "Continuação figuras de linguagem e exercícios",
+            "Correção e comentários das introduções modelo Enem produzidas pelos alunos.",
+            "Vanguardas europeias – contesto histórico.",
+            "Figuras de linguagem (sintaxe e pensamento)",
+            "Continuação sobre figuras de linguagem ( sintaxe e pensamento ) exercícios.",
+            "Futurismo e Cubismo - Expressionismo e Dadaísmo",
+            "Produção de introdução modelo Enem.",
+            "Exercícios de fixação sobre figuras de linguagem .",
+            "Surrealismo e atividades sobre vanguardas europeias.",
+            "Correção e comentários sobre a introdução produzida .",
+            "Revisão sobre figuras de linguagem ,Pré-Modernismo , vanguardas europeias."
+        ]
+    },
+    "turmas": {
+        "3º Ano - Língua Portuguesa - 1º Bimestre": [
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140828&d=5&e=1", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 5
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140837&d=5&e=1", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 14
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140838&d=5&e=1" //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 15
+        ]
+    }
+}

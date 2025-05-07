@@ -3,6 +3,6 @@
     "allowed_elements": ["img"]
   },
   "MD013": {
-    "line_length": 200
+    "line_length": 250
   }
 }

@@ -14,6 +14,6 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@srhenry/type-utils": "^0.3.3"
+    "@srhenry/type-utils": "^0.4.1"
   }
 }

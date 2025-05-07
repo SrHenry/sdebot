@@ -104,12 +104,12 @@ Ou
     >
     > <img src="./assets/img/Captura%20de%20tela%202023-05-17.png" alt="Ilustração dos passos 1 e 2 acima"/>
 
-4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env?plain=1) os nomes dos arquivos de memória que serão utilizados.
+4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env.example?plain=1) os nomes dos arquivos de memória que serão utilizados.
 
-5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env?plain=1). Escolha entre os seguintes modos:
+5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env.example?plain=1). Escolha entre os seguintes modos:
     > - **`normal`:** Modo normal, recomendado quando o diário eletrônico estiver com alta disponibilidade ou sem limitação de consumo.
     > - **`queued`:** Modo econômico, recomendado quando necessitar de uma versão baseada em fila e limite de consumo de API, quando o Diário Eletrônico estiver instável/lento
-    (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env?plain=1#L1))
+    (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env.example?plain=1#L1))
 
 6. Publique a automação usando o seguinte comando:
 
@@ -150,12 +150,12 @@ Ou
     >
     > <img src="./assets/img/Captura%20de%20tela%202023-05-17.png" alt="Ilustração dos passos 1 e 2 acima"/>
 
-4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env?plain=1) os nomes dos arquivos de memória que serão utilizados.
+4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env.example?plain=1) os nomes dos arquivos de memória que serão utilizados.
 
-5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env?plain=1). Escolha entre os seguintes modos:
+5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env.example?plain=1). Escolha entre os seguintes modos:
     > - **`normal`:** Modo normal, recomendado quando o diário eletrônico estiver com alta disponibilidade ou sem limitação de consumo.
     > - **`queued`:** Modo econômico, recomendado quando necessitar de uma versão baseada em fila e limite de consumo de API, quando o Diário Eletrônico estiver instável/lento
-    (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env?plain=1#L1))
+    (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env.example?plain=1#L1))
 
 6. Publique a automação usando o seguinte comando:
 

@@ -2,18 +2,25 @@
   "scripts": {
     "postinstall": "run-script-os",
     "postinstall:win32": "if not exist .env copy .env.example .env else echo \"[INFO]: '.env' already exists!\"",
-    "postinstall:darwin:linux": "[ ! -f .env ] && cp .env.example .env || echo \"[INFO]: '.env' already exists!\""
+    "postinstall:darwin:linux": "[ ! -f .env ] && cp .env.example .env || echo \"[INFO]: '.env' already exists!\"",
+    "build": "webpack"
   },
   "devDependencies": {
-    "comment-json": "^4.2.3",
-    "dotenv": "^16.3.1",
+    "comment-json": "^4.2.5",
+    "dotenv": "^17.0.0",
     "run-script-os": "^1.1.6",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "@srhenry/type-utils": "^0.4.1"
+  },
+  "overrides": {
+    "micromatch": "^4.0.8"
+  },
+  "resolutions": {
+    "micromatch": "^4.0.8"
   }
 }

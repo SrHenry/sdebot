@@ -1,6 +1,6 @@
 import { KeyValuePair } from '../types/KeyValuePair';
 import { isStringKeyValuePair } from './filters/isStringKeyValuePair';
-import { useUriEncodeWithEscape } from './mappers/KeyValueTuples/useUriEncodeWithEscape';
+import { uriEncodeWithEscape } from './mappers/KeyValueTuples/uriEncodeWithEscape';
 
 /**
  * @deprecated it uses deprecated escape() function
@@ -10,6 +10,6 @@ export function to__ISO_8859_1__UrlEncoded(
 ): string {
   return [...data]
     .filter(isStringKeyValuePair)
-    .map(useUriEncodeWithEscape)
+    .map(uriEncodeWithEscape)
     .join('&');
 }

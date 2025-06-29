@@ -1,13 +1,16 @@
 // p42:ignore-file
+declare global {
+  ///? MACROS:
 
-///? MACROS:
+  declare const defaultMemory: import('@/diario-seduc/types/MemoryFile').RawMemoryFile;
+  declare const mode: 'queued' | 'normal';
 
-const defaultMemory: import('@/diario-seduc/types/Memory').Memory;
-const mode: 'queued' | 'normal';
+  declare const INTERVAL: number;
+  declare const CONSUMER_SLEEP_INTERVAL: number;
+  declare const RATE_LIMIT: number;
+  declare const CONCURRENCY: number;
 
-const INTERVAL: number;
-const CONSUMER_SLEEP_INTERVAL: number;
-const RATE_LIMIT: number;
-const CONCURRENCY: number;
+  ///? END;
+}
 
-///? END;
+export {};

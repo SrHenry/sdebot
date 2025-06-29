@@ -1,5 +1,5 @@
-import type { Context } from '../types/Context';
-import { fetchAlunos } from './fetchAlunos';
+import { fetchAlunos } from '@/diario-seduc/functions/fetchAlunos';
+import { Context } from '@/diario-seduc/types/Context';
 
 export async function prepareContent(
   url: string,

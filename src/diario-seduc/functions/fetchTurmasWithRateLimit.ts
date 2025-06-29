@@ -1,7 +1,10 @@
 import { fetchDocument } from '@/common/functions/fetchDocument';
 import { sleep } from '@/common/functions/sleep';
 
-export async function fetchTurmasWithRateLimit(urls: string[], limit = 1) {
+export async function fetchTurmasWithRateLimit(
+  urls: string[] | URL[],
+  limit = 1,
+) {
   const documents: Document[] = [];
   const startTime = Date.now();
   let count = 0;

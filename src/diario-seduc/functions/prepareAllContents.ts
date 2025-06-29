@@ -1,5 +1,5 @@
-import type { Context } from '../types/Context';
-import { prepareContent } from './prepareContent';
+import { prepareContent } from '@/diario-seduc/functions/prepareContent';
+import { Context } from '@/diario-seduc/types/Context';
 
 export async function prepareAllContents(conteudos: string[], root = document) {
   const allContents: Context[] = [];

@@ -1,9 +1,9 @@
 import { Queue } from '@/common/Queue';
 
 import { sleep } from '@/common/functions/sleep';
-import { postContent } from './functions/postContent';
-import { Context } from './types/Context';
-import { IConsumer } from './types/IConsumer';
+import { postContent } from '@/diario-seduc/functions/postContent';
+import { Context } from '@/diario-seduc/types/Context';
+import { IConsumer } from '@/diario-seduc/types/IConsumer';
 
 export class Consumer implements IConsumer {
   public readonly ongoing = new Map<number, Promise<void>>();

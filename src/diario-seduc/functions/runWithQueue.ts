@@ -1,21 +1,21 @@
 import { Queue } from '@/common/Queue';
-
 import { debug } from '@/common/functions/debug';
-import { Consumer } from '../Consumer';
-import type { Memory } from '../types/Memory';
-import { fetchTurmasWithRateLimit } from './fetchTurmasWithRateLimit';
-import { group } from './group';
-import { prepareAllContents } from './prepareAllContents';
+import { group } from '@/common/functions/group';
+import { Consumer } from '@/diario-seduc/Consumer';
+import { fetchMissingConteudosFromMemory } from '@/diario-seduc/functions/fetchMissingConteudosFromMemory';
+import { fetchTurmasWithRateLimit } from '@/diario-seduc/functions/fetchTurmasWithRateLimit';
+import { prepareAllContents } from '@/diario-seduc/functions/prepareAllContents';
+import type { MemoryFile } from '@/diario-seduc/types/MemoryFile';
 
 export async function runWithQueue(
-  memory: Memory,
+  _memory: MemoryFile,
   rateLimit = RATE_LIMIT,
   concurrency = CONCURRENCY,
 ) {
   debug('[runWithQueue::Function] >> Starting...');
 
   const responsesGroups: Response[][] = [];
-
+  const memory = await fetchMissingConteudosFromMemory(_memory);
   const bims = group(memory).by('conteudos', 'turmas');
 
   debug('[runWithQueue::Function] >> Ready!', { memory, bims });

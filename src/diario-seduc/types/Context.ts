@@ -1,4 +1,4 @@
-import type { KeyValuePair } from '@/common/types/KeyValuePair';
+import { KeyValuePair } from '@/common/types/KeyValuePair';
 
 export type Context = {
   url: string;

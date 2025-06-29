@@ -1,4 +1,4 @@
-import { Queue } from '../Queue';
+import { Queue } from '@/common/Queue';
 
 export interface IWorker<T> {
   queue: Queue<T>;

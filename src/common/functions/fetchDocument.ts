@@ -1,4 +1,4 @@
-export async function fetchDocument(url: string): Promise<Document> {
+export async function fetchDocument(url: string | URL): Promise<Document> {
   const response = await fetch(url);
   const html = await response.text();
 

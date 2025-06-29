@@ -1,4 +1,4 @@
-import { KeyValuePair } from '../../../types/KeyValuePair';
+import { KeyValuePair } from '@/common/types/KeyValuePair';
 
 /**
  * @deprecated it uses deprecated escape() function

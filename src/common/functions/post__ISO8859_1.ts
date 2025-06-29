@@ -1,5 +1,5 @@
-import type { KeyValuePair } from '@/common/types/KeyValuePair';
-import { to__ISO_8859_1__UrlEncoded } from './to__ISO_8859_1__UrlEncoded';
+import { to__ISO_8859_1__UrlEncoded } from '@/common/functions/to__ISO_8859_1__UrlEncoded';
+import { KeyValuePair } from '@/common/types/KeyValuePair';
 
 const EMPTY_PARAM = Symbol('post__ISO8859_1.EMPTY_PARAM');
 type DataFormats = FormData | KeyValuePair[] | Iterable<KeyValuePair>;

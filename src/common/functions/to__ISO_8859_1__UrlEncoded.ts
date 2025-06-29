@@ -1,6 +1,6 @@
-import { KeyValuePair } from '../types/KeyValuePair';
-import { isStringKeyValuePair } from './filters/isStringKeyValuePair';
-import { uriEncodeWithEscape } from './mappers/KeyValueTuples/uriEncodeWithEscape';
+import { isStringKeyValuePair } from '@/common/functions/filters/isStringKeyValuePair';
+import { uriEncodeWithEscape } from '@/common/functions/mappers/KeyValueTuples/uriEncodeWithEscape';
+import { KeyValuePair } from '@/common/types/KeyValuePair';
 
 /**
  * @deprecated it uses deprecated escape() function

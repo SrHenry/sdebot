@@ -1,4 +1,4 @@
-import type { KeyValuePair } from '@/common/types/KeyValuePair';
+import { KeyValuePair } from '@/common/types/KeyValuePair';
 import { ArrayRules, array, string, type TypeGuard } from '@srhenry/type-utils';
 
 const { min, max } = ArrayRules;

@@ -1,65 +1,44 @@
-//webpack.config.js
-require('dotenv').config();
-
-const { string, object, StringRules, asEnum } = require('@srhenry/type-utils');
-
-/** @type {() => import('@srhenry/type-utils').TypeGuard<string>} */
-const NumberString = () => o =>
-  string([StringRules.nonEmpty()])(o) && Number(o) !== NaN;
-
-const isValidEnv = object({
-  MEMORY_DATA_PATHS: string(),
-  MODE: asEnum(['queued', 'normal']),
-
-  INTERVAL: NumberString(),
-  CONSUMER_SLEEP_INTERVAL: NumberString(),
-  RATE_LIMIT: NumberString(),
-  CONCURRENCY: NumberString(),
-});
-
-if (!isValidEnv(process.env)) throw new Error('Invalid environment variables');
+//webpack.config.ts
 
 const { DefinePlugin } = require('webpack');
-const { readFileSync } = require('fs');
-const { resolve: __1 } = require('path');
-const { parse: __2 } = require('comment-json');
 
-/** @param {string} path */
-const resolvePath = path => __1(__dirname, path);
-/** @param {string} file */
-const parseJSONC = file => __2(file, null, true);
-/** @param {string} path */
-const isJSONC = path => /.*\.jsonc$/.test(path);
+const {
+  handleMemData,
+} = require('./dist/build/node/functions/mappers/handleMemData');
+const {
+  resolvePath,
+} = require('./dist/build/node/functions/mappers/resolvePath');
+const {
+  EnvironmentValidator,
+} = require('./dist/build/validators/EnvironmentValidator');
+const {
+  ensureMemoryIntegrity,
+} = require('./dist/build/functions/mappers/ensureMemoryIntegrity');
 
-/**
- * @param {string} path
- * @returns {Record<string, string>}
- */
-function handleMemData(path) {
-  if (isJSONC(path)) {
-    const file = readFileSync(path).toString();
-    return parseJSONC(file);
-  } else return require(path);
-}
+require('dotenv').config({ quiet: true });
+
+const Env = EnvironmentValidator.validateEnv(process.env);
 
 /** @type {string[]} */
-const memoryDataPaths = JSON.parse(process.env.MEMORY_DATA_PATHS) ?? [];
+const memoryDataPaths = JSON.parse(Env.MEMORY_DATA_PATHS) ?? [];
 
-/** @type {import('./src/diario-seduc/types/Memory.ts').Memory} */
+/** @type {import('./src/diario-seduc/types/MemoryFile').MemoryFile} */
 const defaultMemory = memoryDataPaths
   .map(resolvePath)
   .map(handleMemData)
+  .map(ensureMemoryIntegrity)
   .reduce((memory, part) => {
-    for (const key in part) {
+    for (const key of Object.keys(part)) {
       if (key in memory) {
-        for (const subkey in part[key]) {
-          memory[key][subkey] =
-            subkey in memory[key]
-              ? {
-                  ...memory[key][subkey],
-                  ...part[key][subkey],
-                }
-              : part[key][subkey];
+        for (const subkey of Object.keys(part[key])) {
+          if (subkey in memory[key]) {
+            memory[key][subkey] = {
+              ...memory[key][subkey],
+              ...part[key][subkey],
+            };
+          } else {
+            memory[key][subkey] = part[key][subkey];
+          }
         }
       } else {
         memory[key] = part[key];
@@ -69,12 +48,12 @@ const defaultMemory = memoryDataPaths
     return memory;
   }, {});
 
-const mode = process.env.MODE;
+const { MODE: mode } = Env;
 
-const INTERVAL = Number(process.env.INTERVAL);
-const CONSUMER_SLEEP_INTERVAL = Number(process.env.CONSUMER_SLEEP_INTERVAL);
-const RATE_LIMIT = Number(process.env.RATE_LIMIT);
-const CONCURRENCY = Number(process.env.CONCURRENCY);
+const INTERVAL = Number(Env.INTERVAL);
+const CONSUMER_SLEEP_INTERVAL = Number(Env.CONSUMER_SLEEP_INTERVAL);
+const RATE_LIMIT = Number(Env.RATE_LIMIT);
+const CONCURRENCY = Number(Env.CONCURRENCY);
 
 const MACROS = {
   defaultMemory,
@@ -85,7 +64,8 @@ const MACROS = {
   CONCURRENCY,
 };
 
-for (const key in MACROS) MACROS[key] = JSON.stringify(MACROS[key]);
+for (const key of Object.keys(MACROS))
+  MACROS[key] = JSON.stringify(MACROS[key]);
 
 module.exports = {
   mode: 'development',

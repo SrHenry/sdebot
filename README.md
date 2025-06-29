@@ -116,13 +116,13 @@ Ou
     No Linux/UNIX/MacOS:
 
     ```sh
-    ./run yarn webpack
+    ./run yarn build
     ```
 
     No Windows:
 
     ```sh
-    .\run.ps1 yarn webpack
+    .\run.ps1 yarn build
     ```
 
     O script de automação deve aparecer no caminho [`dist/script.js`](/dist/script.js)
@@ -160,7 +160,7 @@ Ou
 6. Publique a automação usando o seguinte comando:
 
     ```sh
-    yarn webpack
+    yarn build
     ```
 
     O script de automação deve aparecer no caminho [`dist/script.js`](/dist/script.js)

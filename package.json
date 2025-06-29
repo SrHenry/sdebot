@@ -1,15 +1,26 @@
 {
+  "engines": {
+    "node": ">=22.11.0"
+  },
   "scripts": {
     "postinstall": "run-script-os",
     "postinstall:win32": "if not exist .env copy .env.example .env else echo \"[INFO]: '.env' already exists!\"",
     "postinstall:darwin:linux": "[ ! -f .env ] && cp .env.example .env || echo \"[INFO]: '.env' already exists!\"",
-    "build": "webpack"
+    "prebuild": "run-script-os",
+    "prebuild:win32": "tsc --project tsconfig.build.json; if ($?) tsc-alias -p tsconfig.build.json",
+    "prebuild:linux": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "build": "webpack -c webpack.config.js",
+    "prebuild:clean": "rimraf dist",
+    "build:clean": "npm run build"
   },
   "devDependencies": {
+    "@types/node": "^24.0.7",
     "comment-json": "^4.2.5",
     "dotenv": "^17.0.0",
+    "rimraf": "^6.0.1",
     "run-script-os": "^1.1.6",
     "ts-loader": "^9.5.2",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.8.3",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"

@@ -5,6 +5,6 @@ export class EnvironmentValidator {
   private constructor() {}
 
   public static validateEnv(env: unknown): Env {
-    return Experimental.validate(env, EnvSchema);
+    return Experimental.validate(env, EnvSchema());
   }
 }

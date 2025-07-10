@@ -1,7 +1,8 @@
+import type { Memory } from '@/diario-seduc/types/Memory';
+import type { MemoryFile } from '@/diario-seduc/types/MemoryFile';
+
 import { debug } from '@/common/functions/debug';
 import { fetchConteudos } from '@/diario-seduc/functions/fetchConteudos';
-import { IMemory } from '@/diario-seduc/types/IMemory';
-import { MemoryFile } from '@/diario-seduc/types/MemoryFile';
 
 /**
  * Check if the memory needs to fetch conteudos from SDE, then fetch on the fly
@@ -9,7 +10,7 @@ import { MemoryFile } from '@/diario-seduc/types/MemoryFile';
 export const fetchMissingConteudosFromMemory = async ({
   conteudos,
   turmas,
-}: MemoryFile) => {
+}: MemoryFile): Promise<Memory> => {
   debug(
     '[fetchMissingConteudosFromMemory::Function] >> Checking if conteudos need to be fetched...',
   );
@@ -17,7 +18,7 @@ export const fetchMissingConteudosFromMemory = async ({
   const memory = {
     turmas,
     conteudos: {},
-  } as IMemory;
+  } as Memory;
 
   for (const [key, value] of Object.entries(conteudos)) {
     if (value instanceof URL) {

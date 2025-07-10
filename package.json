@@ -26,7 +26,7 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "@srhenry/type-utils": "^0.4.1"
+    "@srhenry/type-utils": "^0.5.1"
   },
   "overrides": {
     "micromatch": "^4.0.8"

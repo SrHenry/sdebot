@@ -1,23 +1,18 @@
-import { NumberString } from '@/common/types/NumberString';
-import {
-  asEnum,
-  GetTypeGuard,
-  object,
-  optional,
-  string,
-} from '@srhenry/type-utils';
+import { NumberString } from '@/common/schemas/NumberString';
+import { asEnum, object, string } from '@srhenry/type-utils';
 
-export const EnvSchema = object({
-  MEMORY_DATA_PATHS: string(),
-  MODE: asEnum(['queued', 'normal'] as const),
+export const EnvSchema = () =>
+  object({
+    MEMORY_DATA_PATHS: string(),
+    MODE: asEnum(['queued', 'normal'] as const),
 
-  INTERVAL: NumberString(),
-  CONSUMER_SLEEP_INTERVAL: NumberString(),
-  RATE_LIMIT: NumberString(),
-  CONCURRENCY: NumberString(),
+    INTERVAL: NumberString(),
+    CONSUMER_SLEEP_INTERVAL: NumberString(),
+    RATE_LIMIT: NumberString(),
+    CONCURRENCY: NumberString(),
 
-  /** debugging: */
-  __DEBUG__: optional().asEnum(['true', 'false'] as const),
-});
+    /** debugging: */
+    __DEBUG__: asEnum.optional(['true', 'false'] as const),
+  });
 
-export type Env = GetTypeGuard<typeof EnvSchema>;
+export type Env = GetTypeFromSchema<typeof EnvSchema>;

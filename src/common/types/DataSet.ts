@@ -1,5 +1,5 @@
 import { Collection } from '@/common/types/Collection';
-import { KeyValueArray } from '@/common/types/keyValueArray';
+import { KeyValueArray } from '@/common/types/KeyValueArray';
 import { KeyValuePair } from '@/common/types/KeyValuePair';
 
 export type DataSet<T extends Collection> = KeyValuePair<

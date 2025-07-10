@@ -1,8 +1,3 @@
-import { KeyValuePair } from '@/common/types/KeyValuePair';
-import { ArrayRules, array, type TypeGuard } from '@srhenry/type-utils';
+import { KeyValuePair } from '@/common/schemas/KeyValuePair';
 
-const { min, max } = ArrayRules;
-
-export const isKeyValuePair = array([min(2), max(2)]) as TypeGuard<
-  KeyValuePair<unknown, unknown>
->;
+export const isKeyValuePair = KeyValuePair();

@@ -74,7 +74,7 @@ module.exports = {
     main: './src/main.ts',
   },
   output: {
-    path: resolvePath('./dist'),
+    path: resolvePath('./dist/.webpack'),
     filename: 'script.js', // <--- Will be compiled to this single file
   },
   resolve: {

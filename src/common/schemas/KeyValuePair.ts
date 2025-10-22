@@ -21,9 +21,13 @@ type KeyValuePairRuleFactory = {
 
 const name = 'sdebot.key_value_pair' as const;
 const handler =
-  <K, V>([key, value]: KeyValuePair<K, V>) =>
+  <K, V>(tuple: KeyValuePair<K, V>) =>
   (keyGuard?: TypeGuard<K>, valueGuard?: TypeGuard<V>) =>
-    !!keyGuard && !!valueGuard && keyGuard(key) && valueGuard(value);
+    !!keyGuard &&
+    !!valueGuard &&
+    !!tuple &&
+    keyGuard(tuple[0]) &&
+    valueGuard(tuple[1]);
 
 const keyValuePairRule = createRule({
   name,

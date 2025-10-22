@@ -31,7 +31,8 @@ export const fetchMissingConteudosFromMemory = async ({
         memory.conteudos[key] = conteudos;
 
         debug(
-          `[fetchMissingConteudosFromMemory::Function] >> Fetched conteudos: ${conteudos}`,
+          `[fetchMissingConteudosFromMemory::Function] >> Fetched conteudos:`,
+          conteudos,
         );
       } catch (error) {
         debug(
@@ -41,7 +42,9 @@ export const fetchMissingConteudosFromMemory = async ({
 
         throw new Error(`Failed to fetch conteudos from URL: ${key}`);
       }
-    } else memory.conteudos[key] = value;
+    } else {
+      memory.conteudos[key] = value;
+    }
   }
 
   return memory;

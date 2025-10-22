@@ -1,4 +1,4 @@
-import { string, StringRules, TypeGuard } from '@srhenry/type-utils';
+import { string, StringRules, type TypeGuard } from '@srhenry/type-utils';
 
 export const NumberString = () =>
   <TypeGuard<string>>(

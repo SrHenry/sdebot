@@ -5,7 +5,7 @@ export async function fetchConteudos(url: string | URL): Promise<string[]> {
 
   //selecionar a tabela contendo o conteudo:
   const tbody = document.querySelector(
-    'html > body > div > table:nth-child(3) > tbody',
+    'html > body > div > table:nth-of-type(2) > tbody',
   );
 
   if (!tbody) throw new Error('Tabela de conteudos não encontrada');

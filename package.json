@@ -14,19 +14,19 @@
     "build:clean": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "^24.0.7",
-    "comment-json": "^4.2.5",
-    "dotenv": "^17.0.0",
+    "@types/node": "^24.9.1",
+    "comment-json": "^4.4.1",
+    "dotenv": "^17.2.3",
     "rimraf": "^6.0.1",
     "run-script-os": "^1.1.6",
-    "ts-loader": "^9.5.2",
+    "ts-loader": "^9.5.4",
     "tsc-alias": "^1.8.16",
-    "typescript": "^5.8.3",
-    "webpack": "^5.99.9",
+    "typescript": "^5.9.3",
+    "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "@srhenry/type-utils": "^0.5.1"
+    "@srhenry/type-utils": "https://github.com/SrHenry/type-utils/releases/download/v0.5.4/srhenry-type-utils-0.5.4.tgz"
   },
   "overrides": {
     "micromatch": "^4.0.8"

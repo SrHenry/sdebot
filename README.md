@@ -104,14 +104,22 @@ Ou
     >
     > <img src="./assets/img/Captura%20de%20tela%202023-05-17.png" alt="Ilustração dos passos 1 e 2 acima"/>
 
-4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env.example?plain=1) os nomes dos arquivos de memória que serão utilizados.
+4. (Opcional) Caso queira obter os conteudos já preenchidos em uma turma específica (modelo), basta colocar o link da página de conteudos da turma na seção de conteudos do arquivo de memória, como exemplificado no arquivo [`memory-example.jsonc`](/data/memory-example.jsonc?plain=1#L36,17).
 
-5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env.example?plain=1). Escolha entre os seguintes modos:
+    > 1. Para obter o link dos conteudos, basta selecionar a turma/disciplina e o bimestre desejados.
+    > 2. Após preencher os campos de busca, copie o link da barra de URL do navegador.
+    >
+    > <img src="./assets/img/Captura%20de%20tela%202025-10-22%20011526.png" alt="Ilustração do passo 1 acima"/>
+    > <img src="./assets/img/Captura%20de%20tela%202025-10-22%20011205.png" alt="Ilustração do passo 2 acima"/>
+
+5. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env.example?plain=1#L1,19) os nomes dos arquivos de memória que serão utilizados.
+
+6. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env.example?plain=1#L2,6). Escolha entre os seguintes modos:
     > - **`normal`:** Modo normal, recomendado quando o diário eletrônico estiver com alta disponibilidade ou sem limitação de consumo.
     > - **`queued`:** Modo econômico, recomendado quando necessitar de uma versão baseada em fila e limite de consumo de API, quando o Diário Eletrônico estiver instável/lento
     (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env.example?plain=1#L1))
 
-6. Publique a automação usando o seguinte comando:
+7. Publique a automação usando o seguinte comando:
 
     No Linux/UNIX/MacOS:
 
@@ -125,13 +133,13 @@ Ou
     .\run.ps1 yarn build
     ```
 
-    O script de automação deve aparecer no caminho [`dist/script.js`](/dist/script.js)
+    O script de automação deve aparecer no caminho [`dist/.webpack/script.js`](/dist/.webpack/script.js)
 
-7. Copie o script para o console do navegador, na página do [**Diário Eletrônico - SEDUC**](diario_href).
+8. Copie o script para o console do navegador, na página do [**Diário Eletrônico - SEDUC**](diario_href).
     O script iniciará automaticamente assim que colado no console do navegador
     (certifique-se de que está logado **ANTES** de executar estes passos, com um login fresco/recente).
 
-8. Aguardar a execução do script finalizar, onde o console emitirá a mensagem `[run::Function]: Finished!` (Ou `[runWithQueue::Function]: Finished!`)
+9. Aguardar a execução do script finalizar, onde o console emitirá a mensagem `[run::Function]: Finished!` (Ou `[runWithQueue::Function]: Finished!`)
 
 ### Usando Node.js + Yarn
 
@@ -150,26 +158,34 @@ Ou
     >
     > <img src="./assets/img/Captura%20de%20tela%202023-05-17.png" alt="Ilustração dos passos 1 e 2 acima"/>
 
-4. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env.example?plain=1) os nomes dos arquivos de memória que serão utilizados.
+4. (Opcional) Caso queira obter os conteudos já preenchidos em uma turma específica (modelo), basta colocar o link da página de conteudos da turma na seção de conteudos do arquivo de memória, como exemplificado no arquivo [`memory-example.jsonc`](/data/memory-example.jsonc?plain=1#L36,17).
 
-5. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env.example?plain=1). Escolha entre os seguintes modos:
+    > 1. Para obter o link dos conteudos, basta selecionar a turma/disciplina e o bimestre desejados.
+    > 2. Após preencher os campos de busca, copie o link da barra de URL do navegador.
+    >
+    > <img src="./assets/img/Captura%20de%20tela%202025-10-22%20011526.png" alt="Ilustração do passo 1 acima"/>
+    > <img src="./assets/img/Captura%20de%20tela%202025-10-22%20011205.png" alt="Ilustração do passo 2 acima"/>
+
+5. Atualize a memória no script, incluindo na variável de ambiente [`MEMORY_DATA_PATHS`](/.env.example?plain=1#L1,19) os nomes dos arquivos de memória que serão utilizados.
+
+6. Defina o modo de execução do script na variável de ambiente [`MODE`](/.env.example?plain=1#L2,6). Escolha entre os seguintes modos:
     > - **`normal`:** Modo normal, recomendado quando o diário eletrônico estiver com alta disponibilidade ou sem limitação de consumo.
     > - **`queued`:** Modo econômico, recomendado quando necessitar de uma versão baseada em fila e limite de consumo de API, quando o Diário Eletrônico estiver instável/lento
     (É possível configurar os intervalos e limites do algoritmo através de variáveis de ambiente, no arquivo [`.env`](/.env.example?plain=1#L1))
 
-6. Publique a automação usando o seguinte comando:
+7. Publique a automação usando o seguinte comando:
 
     ```sh
     yarn build
     ```
 
-    O script de automação deve aparecer no caminho [`dist/script.js`](/dist/script.js)
+    O script de automação deve aparecer no caminho [`dist/.webpack/script.js`](/dist/.webpack/script.js)
 
-7. Copie o script para o console do navegador, na página do [**Diário Eletrônico - SEDUC**](diario_href).
+8. Copie o script para o console do navegador, na página do [**Diário Eletrônico - SEDUC**](diario_href).
     O script iniciará automaticamente assim que colado no console do navegador
     (certifique-se de que está logado **ANTES** de executar estes passos, com um login fresco/recente).
 
-8. Aguardar a execução do script finalizar, onde o console emitirá a mensagem `[run::Function]: Finished!` (Ou `[runWithQueue::Function]: Finished!`)
+9. Aguardar a execução do script finalizar, onde o console emitirá a mensagem `[run::Function]: Finished!` (Ou `[runWithQueue::Function]: Finished!`)
 
 ## Contribuições
 

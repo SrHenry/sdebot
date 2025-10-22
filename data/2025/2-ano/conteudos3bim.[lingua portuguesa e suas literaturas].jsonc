@@ -1,0 +1,11 @@
+{
+    "conteudos": {
+        "2º Ano - Língua Portuguesa e suas Literaturas - 3º Bimestre": "https://sde.seduc.ro.gov.br/professor/conteudos.php?tp=1628686&e=3" //REGULAR - 2EM - M - 3
+    },
+    "turmas": {
+        "2º Ano - Língua Portuguesa e suas Literaturas - 3º Bimestre": [
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140807&d=252&e=3", //REGULAR - 2EM - M - 1
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140808&d=252&e=3" //REGULAR - 2EM - M - 2
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "conteudos": {
+        "3º Ano - Língua Portuguesa - 3º Bimestre": "https://sde.seduc.ro.gov.br/professor/conteudos.php?tp=1586794&e=3" //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 4
+    },
+    "turmas": {
+        "3º Ano - Língua Portuguesa - 3º Bimestre": [
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140828&d=5&e=3", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 5
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140837&d=5&e=3", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 14
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140838&d=5&e=3" //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 15
+        ]
+    }
+}

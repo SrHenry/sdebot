@@ -1,0 +1,12 @@
+{
+    "conteudos": {
+        "3º Ano - Tarde - Projeto de Vida - 3º Bimestre": "https://sde.seduc.ro.gov.br/professor/conteudos.php?tp=1587333&e=3" //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - M - 4
+    },
+    "turmas": {
+        "3º Ano - Tarde - Projeto de Vida - 3º Bimestre": [
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140835&d=88&e=3", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - T - 12
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140836&d=88&e=3", //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - T - 13
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=140837&d=88&e=3" //ENSINO MÉDIO REGULAR CH ESTENDIDA - 3EM - CH ESTENDIDA - T - 14
+        ]
+    }
+}

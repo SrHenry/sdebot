@@ -31,16 +31,18 @@
             "Atividades de revisão sobre substantivo,adjetivo,artigo e numeral.",
             "Atividades de revisão sobre Romantismo.",
             "Atividades de revisão sobre Romantismo."
-        ]
+        ],
+        // Exemplo com uma turma pré-prenchida (modelo):
+        "2bim": "https://sde.seduc.ro.gov.br/professor/conteudos.php?tp=1628686&e=2" //REGULAR - 2EM - M - 3
     },
     "turmas": {
         "1bim": [
-            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
-            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
-            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
-            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
-            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
-            "https://rubi.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=1" //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=101811&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 1
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=101812&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 2
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=101813&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 3
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=101823&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 13
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=101824&d=5&e=1", //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 14
+            "https://sde.seduc.ro.gov.br/professor/frequencia_busca.php?t=101825&d=5&e=1" //ENSINO MÉDIO REGULAR CH AMPLIADA - 2EM - CH ESTENDIDA - M - 15
         ]
     }
 }

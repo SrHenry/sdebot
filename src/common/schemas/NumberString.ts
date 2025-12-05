@@ -1,6 +1,8 @@
-import { string, StringRules, type TypeGuard } from '@srhenry/type-utils';
+import { createRule, string } from '@srhenry/type-utils';
 
-export const NumberString = () =>
-  <TypeGuard<string>>(
-    (o => string([StringRules.nonEmpty()])(o) && !Number.isNaN(Number(o)))
-  );
+const NumberStringRule = createRule({
+  name: 'SDEBot.Custom.String.NumberString',
+  handler: (o: string) => () => !Number.isNaN(Number(o)),
+});
+
+export const NumberString = () => string().nonEmpty().use(NumberStringRule());

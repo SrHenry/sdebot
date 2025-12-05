@@ -7,6 +7,6 @@ export function StringKeyRecord<T>(
   valueSchema: TypeGuard<T>,
 ): TypeGuard<StringKeyRecord<T>>;
 
-export function StringKeyRecord(valueSchema = any()) {
+export function StringKeyRecord(valueSchema: TypeGuard<unknown> = any()) {
   return record(string(), valueSchema);
 }

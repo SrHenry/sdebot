@@ -88,11 +88,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@srhenry/type-utils@https://github.com/SrHenry/type-utils/releases/download/v0.5.6/srhenry-type-utils-0.5.6.tgz":
-  version "0.5.6"
-  resolved "https://github.com/SrHenry/type-utils/releases/download/v0.5.6/srhenry-type-utils-0.5.6.tgz#dc61f14d548964bf1cc300afc4890d49e59c5999"
+"@srhenry/type-utils@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@srhenry/type-utils/-/type-utils-0.6.0.tgz#bca449092e3675ba79d6dac0e8fc830b7a3bbca4"
+  integrity sha512-OW4Blrc9M3NPD1egAwClyg1CNnxmbCw0deGqnHgbhdrhgTPWeh3DfBoyoqpmitF4LunO3kw4Iw4Vxxbb28hpuQ==
   dependencies:
-    "@types/node" "^24.9.2"
+    "@types/node" "^24.10.1"
     reflect-metadata "^0.2.2"
     typescript "5.9.3"
 
@@ -138,13 +139,6 @@
   version "24.10.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-24.10.1.tgz#91e92182c93db8bd6224fca031e2370cef9a8f01"
   integrity sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==
-  dependencies:
-    undici-types "~7.16.0"
-
-"@types/node@^24.9.2":
-  version "24.9.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.9.2.tgz#90ded2422dbfcafcf72080f28975adc21366148d"
-  integrity sha512-uWN8YqxXxqFMX2RqGOrumsKeti4LlmIMIyV0lgut4jx7KQBcBiW6vkDtIBvHnHIquwNfJhk8v2OtmO8zXWHfPA==
   dependencies:
     undici-types "~7.16.0"
 

@@ -1,4 +1,5 @@
-import { type Env, EnvSchema } from '@/build/types/Env';
+import { EnvSchema } from '@/build/schemas/Env';
+import type { Env } from '@/build/types/Env';
 import { Experimental } from '@srhenry/type-utils';
 
 export class EnvironmentValidator {

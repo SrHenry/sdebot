@@ -2,8 +2,11 @@
 .history
 node_modules
 dist
+!.env.example
 .env
+.env.*
 **/*.draft.*
 **/*.draft
 yarn-error.log
 coverage
+.madge

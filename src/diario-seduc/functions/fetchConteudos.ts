@@ -1,4 +1,5 @@
 import { fetchDocument } from '@/common/functions/fetchDocument';
+import { FetchConteudosError } from '@/diario-seduc/errors/FetchConteudosError';
 
 export async function fetchConteudos(url: string | URL): Promise<string[]> {
   const document = await fetchDocument(url);
@@ -8,13 +9,26 @@ export async function fetchConteudos(url: string | URL): Promise<string[]> {
     'html > body > div > table:nth-of-type(2) > tbody',
   );
 
-  if (!tbody) throw new Error('Tabela de conteudos não encontrada');
+  if (!tbody)
+    throw new FetchConteudosError('Tabela de conteudos não encontrada')
+      .withContext({
+        params: [url],
+      })
+      .withContext({
+        stack: {
+          document,
+          tbody,
+        },
+      });
 
   const trs = [...tbody.querySelectorAll('tr')];
 
-  if (!trs.length) throw new Error('Tabela de conteudos não possui linhas');
+  if (!trs.length)
+    throw new FetchConteudosError('Tabela de conteudos não possui linhas')
+      .withContext({
+        params: [url],
+      })
+      .withContext({ stack: { document, tbody, trs } });
 
-  const conteudos = trs.map(tr => tr.querySelectorAll('td')[2].innerText);
-
-  return conteudos;
+  return trs.map(tr => tr.querySelectorAll('td')[2].innerText);
 }

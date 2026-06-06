@@ -2,7 +2,7 @@
  * BaseError — subclass-preserving fluent error with typed context & cause.
  */
 
-import util from 'node:util';
+import util from 'util';
 import { type Merge, deepMerge } from '../functions/deepMerge';
 
 /**
@@ -95,8 +95,8 @@ export class BaseError<
       ...(causeProvidedInArgs
         ? { cause: (opts as any).cause }
         : hasCauseOnThis
-        ? { cause: (this as any).cause }
-        : {}),
+          ? { cause: (this as any).cause }
+          : {}),
     };
 
     // Construct a new instance of the same subclass

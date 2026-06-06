@@ -1,5 +1,3 @@
-import { Experimental } from '@srhenry/type-utils';
-
 import type { MemoryFile, RawMemoryFile } from '../types/MemoryFile';
 
 import {
@@ -7,13 +5,12 @@ import {
   RawMemoryFile as RawMemoryFileSchema,
 } from '@/diario-seduc/schemas/MemoryFile';
 
-export class MemoryFileValidator {
-  private constructor() {}
+const parsedMemoryValidator = MemoryFileSchema().validator();
+const rawMemoryValidator = RawMemoryFileSchema().validator();
 
-  public static validateParsedMemory(memory: unknown): MemoryFile {
-    return Experimental.validate(memory, MemoryFileSchema());
-  }
-  public static validateRawMemory(memory: unknown): RawMemoryFile {
-    return Experimental.validate(memory, RawMemoryFileSchema());
-  }
-}
+export const MemoryFileValidator = {
+  validateParsedMemory: (memory: unknown): MemoryFile =>
+    parsedMemoryValidator.validate(memory),
+  validateRawMemory: (memory: unknown): RawMemoryFile =>
+    rawMemoryValidator.validate(memory),
+};

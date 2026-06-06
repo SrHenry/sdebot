@@ -1,8 +1,11 @@
-import { createRule, string } from '@srhenry/type-utils';
+import { createInlineRule, string } from '@srhenry/type-utils';
 
-const NumberStringRule = createRule({
-  name: 'SDEBot.Custom.String.NumberString',
-  handler: (o: string) => () => !Number.isNaN(Number(o)),
-});
-
-export const NumberString = () => string().nonEmpty().use(NumberStringRule());
+export const NumberString = () =>
+  string()
+    .nonEmpty()
+    .use(
+      createInlineRule(
+        'SDEBot.Custom.String.NumberString',
+        o => !Number.isNaN(Number(o)),
+      ),
+    );

@@ -4,7 +4,7 @@ import { parseRawMemory } from '@/diario-seduc/functions/mappers/parseRawMemory'
 import { run } from '@/diario-seduc/functions/run';
 import { runWithQueue } from '@/diario-seduc/functions/runWithQueue';
 
-GlobalMacroValidator.validate({
+GlobalMacroValidator.validateGlobalMacros({
   defaultMemory,
   mode,
   INTERVAL,

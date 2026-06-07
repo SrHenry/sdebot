@@ -6,6 +6,10 @@ export const NumberString = () =>
     .use(
       createInlineRule(
         'SDEBot.Custom.String.NumberString',
-        o => !Number.isNaN(Number(o)),
+        o => {
+      const normalized = o.trim();
+      if (normalized.length === 0) return false;
+      return Number.isFinite(Number(normalized));
+    },
       ),
     );

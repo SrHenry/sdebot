@@ -1,11 +1,8 @@
 import { EnvSchema } from '@/build/schemas/Env';
 import type { Env } from '@/build/types/Env';
-import { Experimental } from '@srhenry/type-utils';
 
-export class EnvironmentValidator {
-  private constructor() {}
+const validator = EnvSchema().validator();
 
-  public static validateEnv(env: unknown): Env {
-    return Experimental.validate(env, EnvSchema());
-  }
-}
+export const EnvironmentValidator = {
+  validateEnv: (env: unknown): Env => validator.validate(env),
+};

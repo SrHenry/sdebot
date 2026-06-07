@@ -1,3 +1,6 @@
-import { KeyValuePair } from '@/common/schemas/KeyValuePair';
+import { any, tuple, type TypeGuard } from '@srhenry/type-utils';
 
-export const isKeyValuePair = KeyValuePair();
+export const isKeyValuePair: TypeGuard<[unknown, unknown]> = tuple([
+  any(),
+  any(),
+]);

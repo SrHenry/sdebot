@@ -82,6 +82,9 @@ module.exports = {
     alias: {
       '@': resolvePath('src'),
     },
+    fallback: {
+      util: require.resolve('util/'),
+    },
   },
   module: {
     rules: [

@@ -1,47 +1,32 @@
-import { KeyValueArray } from '@/common/types/KeyValueArray';
-import { StringKeyRecord } from '@/common/types/StringKeyRecord';
 import {
-  GenericStruct,
-  type TypeGuard,
+  type FluentSchema,
+  type Validators,
   getStructMetadata,
   object,
 } from '@srhenry/type-utils';
 
-type ReplacedKeysTree<TOrigin extends {}, TReplace extends {}> = {
-  [K in keyof TReplace]: K extends keyof TReplace
-    ? TypeGuard<TReplace[K]>
-    : K extends keyof TOrigin
-    ? TypeGuard<TOrigin[K]>
-    : never;
-};
+type ReplacedSchema<TOrigin extends {}, TReplace extends {}> = Omit<
+  TOrigin,
+  keyof TReplace
+> &
+  TReplace;
 
 export function replaceSchemaTree<TOrigin extends {}, TReplace extends {}>(
-  schema: TypeGuard<TOrigin>,
-  tree: ReplacedKeysTree<TOrigin, TReplace>,
-): TypeGuard<Prettify<Omit<TOrigin, keyof TReplace> & TReplace>> {
+  schema: FluentSchema<TOrigin>,
+  tree: Validators.ValidatorMap<TReplace>,
+): FluentSchema<Prettify<ReplacedSchema<TOrigin, TReplace>>> {
   const _struct = getStructMetadata(schema);
 
   if (_struct.type !== 'object')
     throw new Error('schema must be an object schema');
 
-  const baseTree = Object.entries<Record<string, GenericStruct<any>>>(
-    _struct.tree,
-  )
-    .filter(([key]) => !(key in tree))
-    .map(([key, value]) => ({
-      [key]: value.schema,
-    })) as unknown as KeyValueArray<string, TypeGuard>;
+  const newTree = Object.assign(
+    {},
+    _struct.tree as Validators.ValidatorMap<TOrigin>,
+    tree,
+  ) as unknown as Validators.ValidatorMap<ReplacedSchema<TOrigin, TReplace>>;
 
-  Object.entries<StringKeyRecord<TypeGuard>>(tree).forEach(e =>
-    baseTree.push(e),
-  );
-
-  const newTree = baseTree.reduce(
-    (o, [k, v]) => Object.assign(o, { [k]: v }),
-    {} as StringKeyRecord<TypeGuard>,
-  );
-
-  return object(newTree) as TypeGuard<
-    Prettify<Omit<TOrigin, keyof TReplace> & TReplace>
+  return object(newTree) as unknown as FluentSchema<
+    ReplacedSchema<TOrigin, TReplace>
   >;
 }
